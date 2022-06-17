@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icon.jpg">
+</head>
+<body>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- JavaScript -->
+    <script src="/js/index.js"></script>
+
+    <!-- Data -->
+    <script type="text/javascript" src="/db/data.json"></script>
+
+    <!-- Header -->
+    <a id="home"></a>
+    <div class="header_div">
+        <h1 class="header_h1" onclick="location.href='index.html'">SHOPPING SHOP</h1>
+        <ul class="header_ul">
+            <li class="header_li"><a class="header_lia" href="#home">HOME</a></li>
+            <li class="header_li"><a class="header_lia" href="#shop">SELL</a></li>
+            <li class="header_li"><a class="header_lia" href="#specialties">SPECIALTIES</a></li>
+            <li class="header_li"><a class="header_lia" href="#event">EVENT</a></li>
+        </ul>
+        <h2 class="header_h2"></h2>
+        <h2 class="header_h3">Cart <a id="cartnum"></a></h2>
+    </div><br><br><br><br><br>
+
+    <!-- IMG -->
+    
+    <img class="img" src="/img/(웹디자인)선수제공파일/사진/photo (1).jpg" alt="b">
+    <h1 class="img_h1">SHOPPING SHOP</h1>
+    <div id="shop"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- List -->
+    <div class="sell_all">
+        <div class="sell_div">
+            <img class="sell_img" src="/img/(웹디자인)선수제공파일/사진/photo (19).jpg" alt="방울토마토">
+            <div class="d1" id="1-d">
+                <h3 class="dl_h3"><b>미슐랭</b>님의 리뷰</h3>
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <p class="dl_p">너무 맛있어요 아니 그냥<br>겁나 맛있어요 꼭 한번 사먹어보세요!</p>
+            </div>
+            <p class="sell_p">농부가 직접 재배한<br><a class="sell_pred">신선하고 맛있는</a> <a class="sell_pred2">방울토마토</a></p>
+            <button class="sell_cartbt" onclick="cartin('방울토마토')">장바구니 담기</button>
+            <p><a class="review" onclick="review('1')" id="1-1">구매후기</a></p>
+        </div>
+
+        <div class="sell_div">
+            <img class="sell_img" src="/img/(웹디자인)선수제공파일/사진/photo (3).jpg" alt="방울토마토">
+            <div class="d2" id="2-d">
+                <h3 class="dl_h3"><b>미슐랭2</b>님의 리뷰</h3>
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이반.png" alt="평점">
+                <p class="dl_p">달달하고 맛있어요 근데<br>배달이 좀 늦게 왔네용..</p>
+            </div>
+            <p class="sell_p">농부가 직접 재배한<br><a class="sell_pred">신선하고 맛있는</a> <a class="sell_pred3">포도</a></p>
+            <button class="sell_cartbt" onclick="cartin('포도')">장바구니 담기</button>
+            <p><a class="review" onclick="review('2')" id="2-1">구매후기</a></p>
+        </div>
+
+        <div class="sell_div">
+            <img class="sell_img" src="/img/(웹디자인)선수제공파일/사진/photo (24).jpg" alt="방울토마토">
+            <div class="d3" id="3-d">
+                <h3 class="dl_h3"><b>미슐랭3</b>님의 리뷰</h3>
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이반.png" alt="평점">
+                <p class="dl_p">어머니 드리려고 구매했는데<br>배달이 좀 밀렸나 늦게 들어왔네요</p>
+            </div>
+            <p class="sell_p">몸 보신은 철저히<br><a class="sell_pred">따듯하고 도움이 되는</a> <a class="sell_pred4">몸보신 차</a></p>
+            <button class="sell_cartbt" onclick="cartin('몸보신 차')">장바구니 담기</button>
+            <p><a class="review" onclick="review('3')" id="3-1">구매후기</a></p>
+        </div>
+
+        <div class="sell_div">
+            <img class="sell_img" src="/img/(웹디자인)선수제공파일/사진/photo (23).jpg" alt="방울토마토">
+            <div class="d4" id="4-d">
+                <h3 class="dl_h3"><b>미슐랭4</b>님의 리뷰</h3>
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이.png" alt="평점">
+                <img class="grade" src="/img/오이반.png" alt="평점">
+                <p class="dl_p">제가 채소를 좋아해서 맛있게<br>먹었긴 했는데요 다음부터는<br>조금만 더 빨리 배송해주시면 좋을거같아요!</p>
+            </div>
+            <p class="sell_p">몸 관리도 철저히<br><a class="sell_pred">영양 필수 </a> <a class="sell_pred5">야채 세트</a></p>
+            <button class="sell_cartbt" onclick="cartin('야채 세트')">장바구니 담기</button>
+            <p><a class="review" onclick="review('4')" id="4-1">구매후기</a></p>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <!-- IMG -->
+    <img class="img2" src="/img/(웹디자인)선수제공파일/사진/photo (22).jpg" alt="b"><div id="specialties"></div><br><br>
+
+    <!-- Fighting And Specialties -->
+    <h1 class="fightingkungnam">힘내라&nbsp;</h1>
+    <h1 class="fightingkungnam2">경남!</h1>
+    <table class="table">
+        <h2 class="caption">경상남도 특상품</h2>
+
+        <th class="table_w">/</th>
+        <th class="table_b">음식</th>
+        <th class="table_b">지역</th>
+        <th class="table_b">음식</th>
+        <th class="table_b">지역</th>
+        <th class="table_b">음식</th>
+        <th class="table_b">지역</th>
+        <th class="table_b">음식</th>
+        <th class="table_b">지역</th>
+        <th class="table_b">음식</th>
+        <tr>
+            <th class="table_b">거창군</th>
+            <td>사과</td>
+
+            <th class="table_b">하동군</th>
+            <td>녹차</td>
+
+            <th class="table_b">남해군</th>
+            <td>유자</td>
+
+            <th class="table_b">마산시</th>
+            <td>파프리카</td>
+
+            <th class="table_b">거제시</th>
+            <td>죽순</td>
+        </tr>
+        <tr>
+            <th class="table_b">함양군</th>
+            <td>밤</td>
+
+            <th class="table_b">진주시</th>
+            <td>고추</td>
+
+            <th class="table_b">사천시</th>
+            <td>옹기</td>
+
+            <th class="table_b">창원시</th>
+            <td>풋고추</td>
+
+            <th class="table_b">진해시</th>
+            <td>피조개</td>
+        </tr>
+        <tr>
+            <th class="table_b">합천군</th>
+            <td>돼지</td>
+
+            <th class="table_b">의령군</th>
+            <td>수박</td>
+
+            <th class="table_b">고성군</th>
+            <td>방울토마토</td>
+
+            <th class="table_b">밀양시</th>
+            <td>깻잎</td>
+
+            <th class="table_b">김해시</th>
+            <td>단감</td>
+        </tr>
+        <tr>
+            <th class="table_b">산청군</th>
+            <td>곶감</td>
+
+            <th class="table_b">창녕군</th>
+            <td>양파</td>
+
+            <th class="table_b">함안군</th>
+            <td>곶감</td>
+
+            <th class="table_b">통영시</th>
+            <td>나전칠기</td>
+
+            <th class="table_b">양산시</th>
+            <td>달걀</td>
+        </tr>
+    </table><br><br><br><br><br>
+    
+    <!-- IMG -->
+    <img class="img2" src="/img/(웹디자인)선수제공파일/디자인소스/the_green_series_3psd_layered.jpg" alt="b">
+    <br><br><br><br><br>
+
+    <!-- Check Event -->
+    <h1 class="event_h1">경상남도와 함께하는 출석 이벤트</h1>
+
+    <div class="event_div" id="event">
+        <button id="check_1" class="check_1" onclick="check('1')"></button>
+        <button id="check_2" class="check_1" onclick="check('2')"></button>
+        <button id="check_3" class="check_1" onclick="check('3')"></button>
+        <button id="check_4" class="check_1" onclick="check('4')"></button>
+        <button id="check_5" class="check_1" onclick="check('5')"></button>
+    </div>
+    <br><br><br><br><br><br>
+
+    <!-- Puter -->
+    <div class="puter">
+        <h1>Shopping Shop 수정고 2022 과제</h1>
+        <p>Made By Ko Seo On</p>
+        <p>이 페이지의 모든 권한이 "고서온" 에게 있음을 알립니다.</p>
+        <br><br><br>
+        <p>MIT License 2022 KoSeoOn</p>
+    </div>
+</body>
+</html>

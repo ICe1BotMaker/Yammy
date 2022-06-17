@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'Noto Sans KR Black';
+    src: url("/Noto_Sans_KR/NotoSansKR-Black.otf") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans KR Bold';
+    src: url("/Noto_Sans_KR/NotoSansKR-Bold.otf") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans KR Medium';
+    src: url("/Noto_Sans_KR/NotoSansKR-Medium.otf") format("woff");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header_div {
+    position: fixed;
+    background-color: white;
+    margin-top: -30px;
+    height: 90px;
+    width: 2000px;
+    z-index: 1;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.header_h1 {
+    font-family: 'Noto Sans KR Black';
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header_ul {
+    list-style-type: none;
+    margin-top: -62px;
+    margin-left: 280px;
+}
+
+.header_li {
+    font-family: 'Noto Sans KR Black';
+    float: left;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.header_lia {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.2s;
+}
+
+.header_lia:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.header_h2 {
+    font-family: 'Noto Sans KR Black';
+    margin-left: 1750px;
+    cursor: pointer;
+}
+
+.header_h3 {
+    font-family: 'Noto Sans KR Black';
+    margin-left: 1790px;
+    margin-top: -54px;
+}
+
+.sell_all {
+    margin-left: 15px;
+}
+
+.sell_div {
+    overflow-y: hidden;
+    margin-left: 45px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    width: 400px;
+    height: 430px;
+    transition: border 0.2s, height 0.3s;
+    text-align: center;
+    float: left;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.review {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.d1 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 115px;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.d2 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 575px;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.d3 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 1030px;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.d4 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 1485px;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.dl_h3 {
+    font-family: 'Noto Sans KR Bold';
+}
+
+.dl_p {
+    font-family: 'Noto Sans KR Medium';
+}
+
+.sell_div:hover {
+    border: 5px solid black;
+    height: 460px;
+}
+
+.sell_h1 {
+    font-family: 'Noto Sans KR Bold';
+    margin-top: -175px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.sell_p {
+    font-family: 'Noto Sans KR Bold';
+    font-size: 18px;
+}
+
+.sell_pred {
+    font-family: 'Noto Sans KR Black';
+    font-size: 25px;
+}
+
+.sell_pred2 {
+    font-family: 'Noto Sans KR Black';
+    font-size: 25px;
+    color: rgb(255, 38, 0);
+}
+
+.sell_pred3 {
+    font-family: 'Noto Sans KR Black';
+    font-size: 25px;
+    color: rgb(111, 0, 255);
+}
+
+.sell_pred4 {
+    font-family: 'Noto Sans KR Black';
+    font-size: 25px;
+    color: rgb(255, 94, 0);
+}
+
+.sell_pred5 {
+    font-family: 'Noto Sans KR Black';
+    font-size: 25px;
+    color: rgb(0, 255, 64);
+}
+
+.sell_img {
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.sell_cartbt {
+    font-family: 'Noto Sans KR Bold';
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 17px;
+    width: 150px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.sell_cartbt:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.sell_cartbt:active {
+    background-color: rgb(0, 0, 0);
+}
+
+.fightingkungnam {
+    margin-left: 100px;
+    font-size: 100px;
+    font-family: 'Noto Sans KR Black';
+    background: linear-gradient(to right, #008b2e, #00ff40);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 50px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.fightingkungnam2 {
+    font-size: 100px;
+    font-family: 'Noto Sans KR Black';
+    background: linear-gradient(to right, #8b3300, #ffd000);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-top: -212px;
+    margin-left: 400px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.table {
+    font-family: 'Noto Sans KR Medium';
+    border: 2px solid black;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 120px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.table_w {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid black;
+    width: 100px;
+}
+
+.table_b {
+    background-color: rgb(197, 237, 255);
+    border: 1px solid black;
+    width: 100px;
+}
+
+.caption {
+    font-family: 'Noto Sans KR Black';
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: -50px;
+}
+
+.grade {
+    width: 25px;
+}
+
+.event_h1 {
+    font-size: 50px;
+    font-family: 'Noto Sans KR Bold';
+    margin-left: 600px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.event_div {
+    margin-top: -20px;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 583px;
+    height: 100px;
+    margin-left: 630px;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(0, 255, 255), rgb(0, 255, 128));
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.check_1 {
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: background 0.1s;
+    margin-left: 10px;
+    font-family: 'Noto Sans KR Medium';
+    text-align: center;
+    font-size: 30px;
+}
+
+.check_1:hover {
+    background: rgb(233, 233, 233);
+}
+
+.check_1:active {
+    background: rgb(0, 0, 0);
+}
+
+.img {
+    width: 1890px;
+    margin-top: -500px;
+}
+
+.img2 {
+    width: 1890px;
+}
+
+.puter {
+    background-color: rgb(39, 39, 39);
+    height: 300px;
+    width: 1790px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-family: 'Noto Sans KR Medium';
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
+
+.img_h1 {
+    color: white;
+    margin-top: -500px;
+    margin-left: 510px;
+    font-size: 100px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:none
+}
