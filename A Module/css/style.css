@@ -17,6 +17,71 @@ html {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 25px;
+}
+
+.img {
+    width: 1890px;
+    margin-top: -500px;
+}
+
+.header_h4 {
+    font-family: 'Noto Sans KR Black';
+    margin-left: 1700px;
+    margin-top: -54px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.blist {
+    border: 5px solid black;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 70px;
+    margin-left: 1570px;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    overflow-y: scroll;
+}
+
+.blist::-webkit-scrollbar {
+    background-color: white;
+}
+
+.blist::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 25px;
+}
+
+.blistul {
+    list-style-type: none;
+}
+
+.blistli {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Noto Sans KR Black';
+}
+
+.h3n_p {
+    font-family: 'Noto Sans KR Bold';
+    margin-top: -43px;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
 .header_div {
     position: fixed;
     background-color: white;
@@ -71,6 +136,10 @@ html {
     font-family: 'Noto Sans KR Black';
     margin-left: 1790px;
     margin-top: -54px;
+}
+
+.header_h4:hover {
+    color: black;
 }
 
 .sell_all {
@@ -341,11 +410,6 @@ html {
 
 .check_1:active {
     background: rgb(0, 0, 0);
-}
-
-.img {
-    width: 1890px;
-    margin-top: -500px;
 }
 
 .img2 {

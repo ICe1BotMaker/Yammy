@@ -1,18 +1,63 @@
 let cartnum = 0;
 let includecart = [];
 
+function open_list() {
+    let blist = document.getElementById("blist");
+    let o = document.getElementById("o");
+
+    blist.style.display = 'inline-block';
+    o.onclick = function() {
+        close_list();
+    }
+
+    for (let i = 0; i < includecart.length; i++) {
+        li = document.getElementById("bli" + String(i));
+        li.textContent = includecart[i];
+    }
+
+    if (includecart.length == 0) {
+        li = document.getElementById("bli3");
+        li.textContent = "구매한 항목이 없습니다.";
+    }
+}
+
+function close_list() {
+    let blist = document.getElementById("blist");
+    let o = document.getElementById("o");
+
+    blist.style.display = 'none';
+    o.onclick = function() {
+        open_list();
+    }
+}
+
 function cartin(type) {
     let cartlist = document.getElementById("list");
-    cartnum = cartnum + 1;
-    includecart.push(type);
 
-    /*cartlist.textContent = "";
-    for (let i = 1; i < includecart.length; i++) {
-        cartlist.textContent += includecart[i];
-    }*/
+    li = document.getElementById("bli3");
+    if (li.textContent == "구매한 항목이 없습니다.") {
+        li.textContent = "";
+    }
 
-    let cartcontent = document.getElementById("cartnum");
-    cartcontent.textContent = cartnum;
+    if (cartnum == 20) {
+        alert("더이상 추가할수 없습니다.");
+    } else {
+        cartnum = cartnum + 1;
+        includecart.push(type);
+
+        /*cartlist.textContent = "";
+        for (let i = 1; i < includecart.length; i++) {
+            cartlist.textContent += includecart[i];
+        }*/
+
+        let cartcontent = document.getElementById("cartnum");
+        cartcontent.textContent = cartnum;
+
+        for (let i = 0; i < includecart.length; i++) {
+            li = document.getElementById("bli" + String(i));
+            li.textContent = includecart[i];
+        }
+    }
 }
 
 function review(type) {
