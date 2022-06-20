@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Noto Sans KR Black';
+    src: url("/Noto_Sans_KR/NotoSansKR-Black.otf") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans KR Bold';
+    src: url("/Noto_Sans_KR/NotoSansKR-Bold.otf") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans KR Medium';
+    src: url("/Noto_Sans_KR/NotoSansKR-Medium.otf") format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: black;
+    height: 50px;
+}
+
+.header_h1a {
+    font-family: 'Noto Sans KR Black';
+    color: white;
+    font-size: 34px;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_h1 {
+    text-align: center;
+}
+
+.bgd {
+    color: white;
+    padding: 10px;
+    font-family: 'Noto Sans KR Medium';
+}
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+    
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
